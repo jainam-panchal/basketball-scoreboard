@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Basketball Scoreboard</title>
+</head>
+
+<body>
+  <div class="grid h-screen place-items-center">
+    <div
+      class="container rounded-3xl bg-designBlue flex flex-row h-[385px] w-[575px] border justify-around items-center  ">
+      <div class="flex flex-col justify-center items-center">
+        <h3 class="mb-[24px] text-center text-desginWhite text-4xl font-bold">HOME</h3>
+        <div id="home-box"
+          class=" flex items-center justify-center font-semibold w-[140px] border-4 rounded-md bg-designBlack h-[120px] ">
+          <p id="home-major-text" class=" text-designRed font-extrabold text-7xl text-center">18</p>
+        </div>
+        <div class="flex gap-3 items-center pt-[26px]">
+          <button id="home-btn-1" onclick="homeInc1()"
+            class=" border-2 border-desginWhite text-desginWhite p-2">+1</button>
+          <button id="home-btn-2" onclick="homeInc2()"
+            class=" border-2 border-desginWhite text-desginWhite p-2">+2</button>
+          <button id="home-btn-3" onclick="homeInc3()"
+            class=" border-2 border-desginWhite text-desginWhite p-2">+3</button>
+        </div>
+      </div>
+      <div>
+        <div class="flex flex-col justify-center items-center">
+          <h3 class="mb-[24px] text-center text-desginWhite text-4xl font-bold">GUEST</h3>
+          <div id="guest-box"
+            class="flex items-center justify-center font-semibold w-[140px] border-4 rounded-md bg-designBlack h-[120px] ">
+            <p id="guest-major-text" class=" text-designRed font-extrabold text-7xl text-center">10</p>
+          </div>
+          <div class="flex gap-3 items-center pt-[26px]">
+            <button id="guest-btn-1" onclick="guestInc1()"
+              class=" border-2 border-desginWhite text-desginWhite p-2">+1</button>
+            <button id="guest-btn-2" onclick="guestInc2()"
+              class=" border-2 border-desginWhite text-desginWhite p-2">+2</button>
+            <button id="guest-btn-3" onclick="guestInc3()"
+              class=" border-2 border-desginWhite text-desginWhite p-2">+3</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
